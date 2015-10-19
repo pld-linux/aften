@@ -2,11 +2,12 @@ Summary:	A/52 audio encoder
 Summary(pl.UTF-8):	Koder dźwięku A/52
 Name:		aften
 Version:	0.0.8
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Applications/Sound
 Source0:	http://downloads.sourceforge.net/aften/%{name}-%{version}.tar.bz2
 # Source0-md5:	fde67146879febb81af3d95a62df8840
+Patch0:		%{name}-libdir.patch
 URL:		http://aften.sourceforge.net/
 BuildRequires:	cmake >= 2.4
 BuildRequires:	libstdc++-devel
@@ -70,6 +71,7 @@ Plik nagłówkowy interfejsu C++ do biblioteki Aften.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 install -d build

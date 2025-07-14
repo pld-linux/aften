@@ -71,7 +71,7 @@ Plik nagłówkowy interfejsu C++ do biblioteki Aften.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 install -d build

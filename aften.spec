@@ -2,7 +2,7 @@ Summary:	A/52 audio encoder
 Summary(pl.UTF-8):	Koder dźwięku A/52
 Name:		aften
 Version:	0.0.8
-Release:	2
+Release:	3
 License:	LGPL v2+
 Group:		Applications/Sound
 Source0:	http://downloads.sourceforge.net/aften/%{name}-%{version}.tar.bz2
